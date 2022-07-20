@@ -1,0 +1,201 @@
+#top_section {
+  background-color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+@media only screen and (max-width:768px) {
+  #logoCol {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  #logoImage {
+    float: right;
+  }
+}
+
+#logoImage {
+  max-width: 56px;
+  padding-top: 10px;
+  padding-right: 5px;
+  float: left;
+}
+
+#logoWithCompanyName {
+  max-width: 340px;
+  padding-top: 10px;
+  padding-right: 5px;
+  float: left;
+}
+
+#company_name {
+  font-family: upbolters;
+  font-size: 2.5em;
+  // color: #003d99;
+  color: #002d64;
+}
+
+#company_name_sub_text {
+  font-size: 1.3em;
+  //color: #008020; nice green
+  color: #006ba1;
+  margin-top: -10px;
+}
+
+
+
+/*-----------Contact Columns-------------------*/
+.contactCol {
+  line-height: 45px;
+  font-size: 1.5em;
+  /*nice orange background-color: #E62E00;*/
+  //display: flex;
+  text-align: center;
+  font-weight: 500;
+}
+
+.contactCol .phoneNo {
+  // font-size: 1.6em;
+}
+
+
+
+@media only screen and (max-width:767px) {
+  .contactCol {
+    margin-bottom: 2px;
+    background-color: #E8ECF1;
+  }
+}
+
+@media only screen and (max-width:767px) {
+
+  .customMargin {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+}
+
+
+
+@media only screen and (min-width:768px) {
+  .contactCol {
+    text-align: right;
+  }
+}
+
+
+@media only screen and (min-width:768px) {
+  .hiddenOnMediumScreens {
+    display: none;
+  }
+}
+
+#callUsColText {
+  display: inline-block;
+  color: #4c6b90;
+  padding-right: 10px;
+}
+
+@media only screen and (min-width:770px) and (max-width:870px) {
+  #callUsColText {
+    display: none;
+  }
+}
+
+
+.contactCol,
+.contactCol a,
+.contactCol a:link,
+.contactCol a:active,
+.contactCol a:hover,
+.contactCol a:visited {
+  text-decoration: none;
+  //color: #006ba1;
+  color: #006ba1;
+}
+
+#whatsapp {
+  color: #00b33c;
+}
+
+.menuLevel2:hover,
+.menuLevel2:link,
+.menuLevel2:active,
+.menuLevel2:hover,
+.menuLevel2:visited {
+  background-color: #C2CEDA;
+}
+
+
+.contactCol:hover {
+  transition: .3s background-color;
+  color: #006747;
+}
+
+.contactText,
+.keyHeader {
+  font-family: roboto-condensed-light, Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
+}
+
+@media only screen and (max-width:200px) {
+  .contactText,
+  .thumbnailDescription {
+    display: none;
+  }
+}
+
+.icon_sosa {
+  vertical-align: middle;
+  font-size: 2.2em;
+}
+/*-----------/Contact Columns-------------------*/
+
+
+
+/*----------Standard Horizontal NAV BAR -------------*/
+@media only screen and (max-width:778px) {
+  div.scrollmenu {
+    display: none;
+  }
+}
+
+div.scrollmenu {
+  overflow: auto;
+  white-space: nowrap;
+  width: 100%;
+  text-align: center;
+  text-justify: inter-word;
+  background-color: #006199;
+  padding-top: .3em;
+  font-family: roboto-condensed-light, Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
+}
+
+div.scrollmenu a {
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  font-size: 1.8em;
+  color: white;
+  padding-left: 3%;
+  padding-right: 3%;
+  border-bottom: .2em solid transparent;
+}
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+  div.scrollmenu a {
+    font-size: 1.3em;
+  }
+}
+
+@media only screen and (min-width:992px) and (max-width:1200px) {
+  div.scrollmenu a {
+    font-size: 1.6em;
+  }
+}
+
+div.scrollmenu a:hover, a:focus, a:active, a:target {
+  border-bottom: .1em solid #00aaff;
+}

@@ -1,0 +1,45 @@
+<div class="container margin-top">
+
+  <div class="row">
+
+    <app-blog-sidebar></app-blog-sidebar>
+
+    <div *ngFor="let blogPost of blogPosts">
+
+      <article class="article-sm article-blog">
+
+        <div class="row">
+          <div class="col">
+            <div Markdown>
+              <h2>{{ blogPost.fields.blogPostTitle}}</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+
+          <div class="col-12   col-sm-12   col-md-8   col-lg-6  col-xl-7">
+
+          <div Markdown>
+            {{ blogPost.fields.blogPostText}}
+          </div>
+
+          </div>
+
+
+          <div class="col-12   col-sm-12   col-md-4   col-lg-5 offset-lg-1    col-xl-4 offset-xl-1  ">
+
+            <img src="{{ blogPost.fields.blogPostImage.fields.file.url }}" id="leaking-tap" class="centerImage" alt="{{blogPost.fields.blogPostImage.fields.name }}">
+
+          </div>
+
+        </div>
+
+      </article>
+
+    
+
+
+    </div>
+  </div>
+</div>

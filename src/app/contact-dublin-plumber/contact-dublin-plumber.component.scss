@@ -1,0 +1,23 @@
+
+/*------ Google Map*/
+#findUs {
+  padding-bottom: 60px;
+  background-color: white;
+}
+
+.googleMap {
+  max-width: 100%;
+  position: relative;
+  padding-bottom: 50%; // This is the aspect ratio
+  height: 0;
+  overflow: hidden;
+}
+
+.googleMap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+/* ----- /Google Map*/

@@ -1,0 +1,60 @@
+<div id="container">
+  <div class="error" [class.hidden]="errorMsg.length == 0">
+    <p>{{errorMsg}}</p>
+    <span (click)="closeError()" class="close">✖︎</span>
+  </div>
+  <h1>Contact Us</h1>
+  <p>Quotes are free and we're always grateful to receive any feedback on how we can improve our services.</p>
+  <form [formGroup]="feedbackForm" name="feedbackForm" (ngSubmit)="onSubmit()">
+    <!-- <div id="options">
+    <p class="radioOption">
+      <input formControlName="type" type="radio" id="suggestion" name="type" value="suggestion">
+      <label for="suggestion">Suggestion</label><br>
+    </p>
+    <p class="radioOption">
+      <input formControlName="type" type="radio" id="comment" name="type" value="comment">
+      <label for="comment">Comment</label><br>
+    </p>
+    <p class="radioOption">
+      <input formControlName="type" type="radio" id="question" name="type" value="question">
+      <label for="question">Question</label><br>
+    </p>
+  </div>-->
+    <div class="inputContainer">
+      <label for="Name">Name:</label>
+      <div class="nameInput">
+        <input formControlName="firstName" type="text" name="firstName" placeholder="First" class="form-control">
+        <input formControlName="lastName" type="text" name="lastName" placeholder="Last" class="form-control">
+      </div>
+    </div>
+    <div class="inputContainer form-group">
+      <!--Form-group and form-control (below) is just for CSS. I think it's Bootstrap-->
+      <label for="Phone">Phone:</label>
+      <input formControlName="phone" type="tel" name="phone" class="form-control">
+    </div>
+    <div class="inputContainer form-group">
+      <label for="Email">Email:</label>
+      <input formControlName="email" type="email" name="email" class="form-control">
+    </div>
+    <div class="inputContainer form-group">
+      <label for="Message">Message:</label>
+      <textarea rows="6" formControlName="description" class="form-control"></textarea>
+    </div>
+    <div class="inputContainer form-group">
+      <label></label>
+      <!--Just there to give even space elements
+  <button type="submit" class="btn btn-primary" [disabled]="feedbackForm.invalid">Submit</button>-->
+      <button type="submit"  class="btn btn-primary">Submit</button>
+    </div>
+    <small>We'll never share your phone number with anyone else.</small>
+    <!--<div class="inputContainer">
+    <div id="ratingLabel">
+      <label>How would you rate our site?</label>
+      <label id="ratingValue">{{feedbackForm.value?.rating}}</label>
+    </div>
+    <input formControlName="rating" type="range" name="rating" max="5">
+  </div>-->
+
+  </form>
+</div>
+

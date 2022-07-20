@@ -1,0 +1,15 @@
+<article class="sidebar">
+
+
+  <div class="row">
+
+    <div *ngFor="let blogPost of blogPosts" class="col-12   col-sm-12   col-md-6   col-lg-4  col-xl-4">
+      <div class="customNavItem">
+        <a routerLink="/blog/{{ blogPost.fields.slug | lowercase}}" routerLinkActive="active">
+          <h4>{{ blogPost.fields.blogPostTitle}}</h4>
+        </a>
+      </div>
+    </div>
+  </div>
+
+</article>

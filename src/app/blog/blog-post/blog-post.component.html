@@ -1,0 +1,38 @@
+<div class="container  margin-top">
+
+  <app-blog-sidebar></app-blog-sidebar>
+
+  <div class="row">
+
+    <article class="article-sm">
+
+      <div *ngIf="blogPost">
+
+
+        <h1>{{ blogPost.fields.blogPostTitle}}</h1>
+
+
+        <img src="{{ blogPost.fields.blogPostImage.fields.file.url }}" id="leaking-tap" class="textWrap" alt="{{blogPost.fields.blogPostImage.fields.name }}">
+
+        <br />
+        <!--need to replace this with Marked <showdown smartIndentationFix [value]="blogPostText"></showdown>
+    -->
+
+        <div *ngIf="blogPostVideos">
+          <video controls>
+            <source [src]="blogPost.fields.blogPostVideo.fields.file.url" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+      </div>
+
+
+    </article>
+
+
+  </div>
+
+</div>
+
+
