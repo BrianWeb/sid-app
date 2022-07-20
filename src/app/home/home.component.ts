@@ -4,8 +4,7 @@ import { Component, OnInit } from '@angular/core';
 import { ContentfulService } from '../contentful.service/contentful.service';
 import { Entry } from 'contentful';
 
-//Marked
-import { marked } from 'marked';
+
 
 @Component({
   selector: 'app-home',
@@ -114,11 +113,5 @@ export class HomeComponent implements OnInit {
   toggleLink(): void {
     this.showLink = !this.showLink;
   }
-
-
-
-// or const { marked } = require('marked');
-
-const html = marked.parse('# Marked in Node.js\n\nRendered by **marked**.');
 }
 
