@@ -38,8 +38,8 @@
               "src/assets/vendors/bootstrap.min.css",
               "src/styles.scss",
               "src/fonts/font_awesome/css/all.min.css"
-            ],		
-            "scripts": []
+            ],
+            "scripts": [ "node_modules/marked/marked.min.js" ]
           },
           "configurations": {
             "production": {

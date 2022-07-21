@@ -45,6 +45,10 @@ import { ContactService } from './common/contact.service';
 //import { ShowdownModule } from 'ngx-showdown';
 
 
+//https://github.com/jfcere/ngx-markdown
+import { MarkdownModule } from 'ngx-markdown';
+
+
 //import { HttpClientModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -54,8 +58,6 @@ import { NoopAnimationsModule, BrowserAnimationsModule } from '@angular/platform
 import { SuccessComponent } from './common/contact-form/success/success.component';
 import { PageNotFoundComponent } from './common/contact-form/page-not-found/page-not-found.component';
 import { ContactComponent } from './common/contact-form/contact/contact.component';
-
-import { MarkdownPipe } from './markdown.pipe';
 
 
 
@@ -85,8 +87,7 @@ import { MarkdownPipe } from './markdown.pipe';
     BlogSidebarComponent,
     SuccessComponent,
     PageNotFoundComponent,
-    ContactComponent,
-    MarkdownPipe
+    ContactComponent
   ],
   imports: [
     BrowserModule,
@@ -94,6 +95,7 @@ import { MarkdownPipe } from './markdown.pipe';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    MarkdownModule.forRoot(),
 
     //Markdown
     //NgxMdModule.forRoot(),

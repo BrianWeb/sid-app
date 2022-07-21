@@ -4,8 +4,6 @@ import { Component, OnInit } from '@angular/core';
 import { ContentfulService } from '../contentful.service/contentful.service';
 import { Entry } from 'contentful';
 
-
-
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',

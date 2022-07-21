@@ -11,12 +11,14 @@
 
         <h1>{{ blogPost.fields.blogPostTitle}}</h1>
 
+        <markdown [data]="blogPost.fields.blogPostText"></markdown>
+
 
         <img src="{{ blogPost.fields.blogPostImage.fields.file.url }}" id="leaking-tap" class="textWrap" alt="{{blogPost.fields.blogPostImage.fields.name }}">
 
         <br />
         <!--need to replace this with Marked <showdown smartIndentationFix [value]="blogPostText"></showdown>
-    -->
+  -->
 
         <div *ngIf="blogPostVideos">
           <video controls>

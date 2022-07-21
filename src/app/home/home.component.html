@@ -69,8 +69,9 @@
       <div class="col-12   col-sm-12   col-md-7   col-lg-6  col-xl-6">
         <ul>
           <li *ngFor="let homePageIntro of homePageIntros">
-            <div Markdown>
-              {{homePageIntro.fields.homePageIntroTextField}}
+            <div>
+              <markdown [data]="homePageIntro.fields.homePageIntroTextField">
+              </markdown>
             </div>
           </li>
         </ul>
@@ -181,7 +182,20 @@
   </article>
 
 
+  <markdown ngPreserveWhitespaces>
 
+    ## Emphasis
+
+    **This is bold text**
+
+    __This is bold text__
+
+    *This is italic text*
+
+    _This is italic text_
+
+    ~~Strikethrough~~
+  </markdown>
 
 
 
