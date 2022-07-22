@@ -38,8 +38,8 @@
 
         <ul>
           <li *ngFor="let areasPage of areasPages">
-            <div Markdown class="justifyText">
-              {{ areasPage.fields.areasPageIntroTextField}}
+            <div class="justifyText">
+              <markdown [data]="areasPage.fields.areasPageIntroTextField"></markdown>
             </div>
           </li>
         </ul>

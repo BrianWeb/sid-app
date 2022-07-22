@@ -70,7 +70,7 @@
         <ul>
           <li *ngFor="let homePageIntro of homePageIntros">
             <div Markdown>
-              {{homePageIntro.fields.homePageIntroTextField}}
+              <markdown [data]="homePageIntro.fields.homePageIntroTextField"></markdown>
             </div>
           </li>
         </ul>

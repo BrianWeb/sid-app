@@ -28,8 +28,9 @@
 
       <ul>
         <li *ngFor="let faq of faqs">
-          <div Markdown>
-            {{ faq.fields.faqListing }}
+          areasPage.fields.areasPageIntroTextField
+          <div>
+            <markdown [data]="faq.fields.faqListing"></markdown>
           </div>
         </li>
       </ul>
