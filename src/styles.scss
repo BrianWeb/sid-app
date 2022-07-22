@@ -182,168 +182,173 @@ video {
   text-justify: inter-word;
 }
 
-
-@media only screen and (min-width:992px) {
-  .customContainer {
-    padding-left: 6%;
-    padding-right: 6%;
+.justifyTextOnLargeScreens {
+  @media only screen and (min-width:992px) {
+    text-align: justify;
+    text-justify: inter-word;
   }
 }
 
 
 
-@media only screen and (min-width:1200px) {
-  .customContainer {
-    padding-left: 8%;
-    padding-right: 8%;
+  @media only screen and (min-width:992px) {
+    .customContainer {
+      padding-left: 6%;
+      padding-right: 6%;
+    }
   }
-}
 
-@media only screen and (min-width:1400px) {
-  .customContainer {
-    padding-left: 12%;
-    padding-right: 12%;
+
+
+  @media only screen and (min-width:1200px) {
+    .customContainer {
+      padding-left: 8%;
+      padding-right: 8%;
+    }
   }
-}
 
-.em1-2 {
-  font-size: 1.2em;
-}
+  @media only screen and (min-width:1400px) {
+    .customContainer {
+      padding-left: 12%;
+      padding-right: 12%;
+    }
+  }
 
-.em1-4 {
-  font-size: 1.4em;
-}
+  .em1-2 {
+    font-size: 1.2em;
+  }
 
-.fa-star {
-  color: #ffcc00;
-}
+  .em1-4 {
+    font-size: 1.4em;
+  }
 
-.googleReviewStars .fa-star {
-  padding-right: 5px;
-}
-/*
+  .fa-star {
+    color: #ffcc00;
+  }
+
+  .googleReviewStars .fa-star {
+    padding-right: 5px;
+  }
+  /*
 .googleReviewStars .fa-star:last-of-type {
   padding-right: 10px;
 
 }*/
-.googleReviewStars {
-  a {
-    color: white;
+  .googleReviewStars {
+    a {
+      color: white;
+    }
+
+    a:hover {
+      color: #00ccff;
+    }
+  }
+  //COLOURS
+  //FONTS:
+  @font-face {
+    font-family: evogria;
+    src: url(fonts/evogria.otf);
+    font-display: swap;
   }
 
-  a:hover {
-    color: #00ccff;
+  @font-face {
+    font-family: velocista;
+    src: url(fonts/velocista.ttf);
+    font-display: swap;
   }
-}
-//COLOURS
-//FONTS:
-@font-face {
-  font-family: evogria;
-  src: url(fonts/evogria.otf);
-  font-display: swap;
-}
 
-@font-face {
-  font-family: velocista;
-  src: url(fonts/velocista.ttf);
-  font-display: swap;
-}
-
-@font-face {
-  font-family: upbolters;
-  src: url(fonts/upbolters.otf);
-  font-display: swap;
-}
+  @font-face {
+    font-family: upbolters;
+    src: url(fonts/upbolters.otf);
+    font-display: swap;
+  }
 
 
-@font-face {
-  font-family: 'segoe-ui';
-  src: url('fonts/segoe-ui.ttf') format('truetype');
-  font-display: swap;
-}
+  @font-face {
+    font-family: 'segoe-ui';
+    src: url('fonts/segoe-ui.ttf') format('truetype');
+    font-display: swap;
+  }
 
-@font-face {
-  font-family: 'segoe-ui-light';
-  src: url('fonts/segoe-ui-light.ttf') format('truetype');
-  font-display: swap;
-}
+  @font-face {
+    font-family: 'segoe-ui-light';
+    src: url('fonts/segoe-ui-light.ttf') format('truetype');
+    font-display: swap;
+  }
 
-@font-face {
-  font-family: 'roboto-condensed-light';
-  src: url('fonts/roboto-condensed-light.ttf') format('truetype');
-  font-display: swap;
-}
-
-
-.fa-ambulance {
-  color: #e60000;
-}
-
-.fa-tint {
-  color: #66ccff;
-}
-
-.fa-fire {
-  color: #1a75ff;
-}
-
-.fa-wrench {
-  color: #ff9900;
-}
-
-.fa-thermometer-4 {
-  color: #ff4800;
-}
-/* --- Icons */
+  @font-face {
+    font-family: 'roboto-condensed-light';
+    src: url('fonts/roboto-condensed-light.ttf') format('truetype');
+    font-display: swap;
+  }
 
 
+  .fa-ambulance {
+    color: #e60000;
+  }
 
-/*----------Standard Horizontal NAV BAR -------------*/
-@media only screen and (max-width:768px) {
+  .fa-tint {
+    color: #66ccff;
+  }
+
+  .fa-fire {
+    color: #1a75ff;
+  }
+
+  .fa-wrench {
+    color: #ff9900;
+  }
+
+  .fa-thermometer-4 {
+    color: #ff4800;
+  }
+  /* --- Icons */
+  /*----------Standard Horizontal NAV BAR -------------*/
+  @media only screen and (max-width:768px) {
+    div.scrollmenu {
+      display: none;
+    }
+  }
+
   div.scrollmenu {
-    display: none;
+    overflow: auto;
+    white-space: nowrap;
+    width: 100%;
+    text-align: center;
+    text-justify: inter-word;
+    background-color: #006199;
+    padding-top: .3em;
+    font-family: roboto-condensed-light, Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
   }
-}
 
-div.scrollmenu {
-  overflow: auto;
-  white-space: nowrap;
-  width: 100%;
-  text-align: center;
-  text-justify: inter-word;
-  background-color: #006199;
-  padding-top: .3em;
-  font-family: roboto-condensed-light, Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
-}
-
-div.scrollmenu a {
-  text-decoration: none;
-  display: inline-block;
-  text-align: center;
-  font-size: 1.8em;
-  color: white;
-  padding-left: 3%;
-  padding-right: 3%;
-  border-bottom: .2em solid transparent;
-}
-
-@media only screen and (min-width:768px) and (max-width:991px) {
   div.scrollmenu a {
-    font-size: 1.3em;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.8em;
+    color: white;
+    padding-left: 3%;
+    padding-right: 3%;
+    border-bottom: .2em solid transparent;
   }
-}
 
-@media only screen and (min-width:992px) and (max-width:1200px) {
-  div.scrollmenu a {
-    font-size: 1.6em;
+  @media only screen and (min-width:768px) and (max-width:991px) {
+    div.scrollmenu a {
+      font-size: 1.3em;
+    }
   }
-}
+
+  @media only screen and (min-width:992px) and (max-width:1200px) {
+    div.scrollmenu a {
+      font-size: 1.6em;
+    }
+  }
 
 
-div.scrollmenu a:hover, a:focus, a:active, a:target {
-  border-bottom: .1em solid #00aaff;
-}
-/*
+  div.scrollmenu a:hover, a:focus, a:active, a:target {
+    border-bottom: .1em solid #00aaff;
+  }
+  /*
 div.scrollmenu a:active,
 div.scrollmenu a:hover {
   color: whitesmoke;
@@ -354,248 +359,242 @@ div.scrollmenu a:visited {
   color: white;
 }
   */
-/* border under links on hover */
-/*-------/Nav Bar-----------*/
+  /* border under links on hover */
+  /*-------/Nav Bar-----------*/
+  /*Overlay NAV BAR*/
+  @media only screen and (min-width:778px) {
+    #burgerBarVerticalNavBar {
+      display: none;
+    }
+  }
 
-/*Overlay NAV BAR*/
-@media only screen and (min-width:778px) {
   #burgerBarVerticalNavBar {
-    display: none;
-  }
-}
-
-#burgerBarVerticalNavBar {
-  padding-left: 20px;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  background-color: #006199;
-  font-size: 26px;
-  cursor: pointer;
-  color: white;
-  font-family: roboto-condensed-light, Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
-}
-
-#burgerBarIcon {
-  color: white;
-}
-
-;
-/* -- Pop out Menu from https://www.w3schools.com/howto/howto_js_sidenav.asp*/
-/* The side navigation menu */
-.sidenav {
-  height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
-  left: 0;
-  background-color: #006199;
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 50px; /* Place content 50px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-}
-/* The navigation menu links */
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #f1f1f1;
-  display: block;
-  transition: 0.3s;
-}
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-  color: #b3e6ff;
-  text-decoration: none;
-}
-/* Position and style the close button (top right corner) */
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 40px;
-  margin-left: 50px;
-}
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main {
-  transition: margin-left .5s;
-  padding: 20px;
-}
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidenav {
-    padding-top: 15px;
+    padding-left: 20px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    background-color: #006199;
+    font-size: 26px;
+    cursor: pointer;
+    color: white;
+    font-family: roboto-condensed-light, Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
   }
 
-  .sidenav a {
-    font-size: 18px;
-  }
-}
-
-
-
-
-
-/* ---- PRODUCT ICONS ------ */
-/*Services Icons*/
-#servicesPageHeader {
-  background-color: white;
-}
-
-#productIconsAndTitleContainer {
-  background-color: white;
-}
-
-
-a:hover {
-  text-decoration: none;
-}
-
-a:link {
-  text-decoration: none;
-}
-
-a:visited {
-  text-decoration: none;
-}
-
-a:active {
-  text-decoration: none;
-}
-
-a:focus {
-  text-decoration: none;
-}
-
-
-
-@media only screen and (min-width:576px) {
-  #productIconsAndTitleContainer {
-  }
-}
-
-#productIconsRow {
-}
-
-
-.productSvgAndHeader, .defaultButton {
-  font: 1.2em;
-  margin-top: 1.1em;
-  margin-bottom: 1.1em;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  text-align: center;
-}
-
-.defaultButton {
-  background-color: #006199;
-  color: white; /*Boostrap override*/
-}
-
-.defaultButton a {
-  color: white; /*Boostrap override*/
-}
-
-@media only screen and (min-width:768px) and (max-width:992px) {
-  .productSvgAndHeader {
-    //height: 302px; /*at this view point 'Panel Products' and 'Timber Products' are taller than 'Insulation' and 'Joists' because they have two words. This makes them all the same height*/
-  }
-}
-
-svg {
-  width: 100%;
-}
-
-.productSvg {
-  padding-top: 1.5em;
-  fill: #fff;
-  background-color: white;
-}
-
-.st0 {
-  fill: none;
-  stroke: white;
-  stroke-miterlimit: 10;
-}
-
-.productHeading {
-  padding: .5em;
-  // font-size: 1.4em;
-  font-size: 1.1em;
-  font-weight: 600;
-  letter-spacing: 1px;
-}
-
-.serivceDescription {
-  color: #212529;
-  text-align: justify;
-}
-
-
-#servicesBulletPoints {
-  padding-bottom: 10px;
-}
-
-
-#servicesBulletPoints .fa-check {
-  color: #006ba1;
-}
-/* ----/Services -----*/
-#callUsBanner {
-  background-color: #007abf;
-  color: white;
-
-}
-
-#callUsBanner a {
-  color: white;
-}
-
-
-/* ---- Referrals ------*/
-#referrals {
-  background-color: #f5f5f5;
-
-}
-/**/
-ol li {
-  display: none;
-}
-
-
-a {
-  text-decoration: none
-}
-/* /Referrals */
-/* ---- Home Page about us*/
-#aboutUs {
-  background-color: #f5f5f5;
-}
-/* ----/ Home Page about us*/
-
-
-/* ---- Common Footer*/
-#commonFooter {
-  background-color: #31404e;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  color: #e6f7ff;
-
-  h3 {
+  #burgerBarIcon {
     color: white;
   }
 
-  a {
-    color: #e6f7ff;
+  ;
+  /* -- Pop out Menu from https://www.w3schools.com/howto/howto_js_sidenav.asp*/
+  /* The side navigation menu */
+  .sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #006199;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 50px; /* Place content 50px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
   }
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #f1f1f1;
+    display: block;
+    transition: 0.3s;
+  }
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #b3e6ff;
+    text-decoration: none;
+  }
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 40px;
+    margin-left: 50px;
+  }
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {
+      padding-top: 15px;
+    }
+
+    .sidenav a {
+      font-size: 18px;
+    }
+  }
+  /* ---- PRODUCT ICONS ------ */
+  /*Services Icons*/
+  #servicesPageHeader {
+    background-color: white;
+  }
+
+  #productIconsAndTitleContainer {
+    background-color: white;
+  }
+
 
   a:hover {
-    color: #00aaff;
+    text-decoration: none;
   }
-}
+
+  a:link {
+    text-decoration: none;
+  }
+
+  a:visited {
+    text-decoration: none;
+  }
+
+  a:active {
+    text-decoration: none;
+  }
+
+  a:focus {
+    text-decoration: none;
+  }
 
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+  @media only screen and (min-width:576px) {
+    #productIconsAndTitleContainer {
+    }
+  }
+
+  #productIconsRow {
+  }
+
+
+  .productSvgAndHeader, .defaultButton {
+    font: 1.2em;
+    margin-top: 1.1em;
+    margin-bottom: 1.1em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+  }
+
+  .defaultButton {
+    background-color: #006199;
+    color: white; /*Boostrap override*/
+  }
+
+  .defaultButton a {
+    color: white; /*Boostrap override*/
+  }
+
+  @media only screen and (min-width:768px) and (max-width:992px) {
+    .productSvgAndHeader {
+      //height: 302px; /*at this view point 'Panel Products' and 'Timber Products' are taller than 'Insulation' and 'Joists' because they have two words. This makes them all the same height*/
+    }
+  }
+
+  svg {
+    width: 100%;
+  }
+
+  .productSvg {
+    padding-top: 1.5em;
+    fill: #fff;
+    background-color: white;
+  }
+
+  .st0 {
+    fill: none;
+    stroke: white;
+    stroke-miterlimit: 10;
+  }
+
+  .productHeading {
+    padding: .5em;
+    // font-size: 1.4em;
+    font-size: 1.1em;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+
+  .serivceDescription {
+    color: #212529;
+    text-align: justify;
+  }
+
+
+  #servicesBulletPoints {
+    padding-bottom: 10px;
+  }
+
+
+  #servicesBulletPoints .fa-check {
+    color: #006ba1;
+  }
+  /* ----/Services -----*/
+  #callUsBanner {
+    background-color: #007abf;
+    color: white;
+  }
+
+  #callUsBanner a {
+    color: white;
+  }
+  /* ---- Referrals ------*/
+  #referrals {
+    background-color: #f5f5f5;
+  }
+  /**/
+  ol li {
+    display: none;
+  }
+
+
+  a {
+    text-decoration: none
+  }
+  /* /Referrals */
+  /* ---- Home Page about us*/
+  #aboutUs {
+    background-color: #f5f5f5;
+  }
+  /* ----/ Home Page about us*/
+  /* ---- Common Footer*/
+  #commonFooter {
+    background-color: #31404e;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: #e6f7ff;
+
+    h3 {
+      color: white;
+    }
+
+    a {
+      color: #e6f7ff;
+    }
+
+    a:hover {
+      color: #00aaff;
+    }
+  }
+
+
+  html, body {
+    height: 100%;
+  }
+
+  body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+  }

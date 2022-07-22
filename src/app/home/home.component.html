@@ -65,7 +65,7 @@
   <!---Welcome text & Contact form-->
   <article id="welcomeAndContactForm" class="article-lg container">
 
-    <div class="row justifyText">
+    <div class="row justifyTextOnLargeScreens">
       <div class="col-12   col-sm-12   col-md-12   col-lg-6  col-xl-6">
         <ul>
           <li *ngFor="let homePageIntro of homePageIntros">
@@ -77,9 +77,8 @@
 
       </div>
 
-      <div class="col-12   col-sm-12   col-md-12  col-lg-6    col-xl-5 offset-xl-1">
+      <div class="col-12   col-sm-12   col-md-12  col-lg-5 offset-lg-1   col-xl-5 offset-xl-1">
         <app-contact></app-contact>
-
       </div>
 
 
@@ -179,22 +178,6 @@
     </div>
 
   </article>
-
-
-  <markdown ngPreserveWhitespaces>
-
-    ## Emphasis
-
-    **This is bold text**
-
-    __This is bold text__
-
-    *This is italic text*
-
-    _This is italic text_
-
-    ~~Strikethrough~~
-  </markdown>
 
 
 
