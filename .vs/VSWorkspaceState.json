@@ -3,12 +3,11 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\common",
-    "\\src\\app\\common\\contact-form",
-    "\\src\\app\\common\\contact-form\\contact",
     "\\src\\app\\common\\contact-form\\netlify-forms",
-    "\\src\\app\\home"
+    "\\src\\app\\home",
+    "\\src\\app\\plumbing-services",
+    "\\src\\app\\plumbing-services\\common\\services-footer"
   ],
-  "SelectedNode": "\\angular.json",
+  "SelectedNode": "\\src\\styles.scss",
   "PreviewInSolutionExplorer": false
 }
