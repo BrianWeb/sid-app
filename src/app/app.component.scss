@@ -1,7 +1,7 @@
-#top_section {
+#topSection {
   background-color: white;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 4px;
 }
 
 @media only screen and (max-width:768px) {
@@ -9,24 +9,19 @@
     text-align: center;
     margin-bottom: 10px;
   }
-
-  #logoImage {
-    float: right;
-  }
 }
 
 #logoImage {
-  max-width: 56px;
-  padding-top: 10px;
+  width: 51px;
+  height: 73px;
   padding-right: 5px;
-  float: left;
+  display: inline-block;
+  vertical-align: middle;
 }
 
-#logoWithCompanyName {
-  max-width: 340px;
-  padding-top: 10px;
-  padding-right: 5px;
-  float: left;
+#companyNameAndSlogan {
+  display: inline-block;
+  vertical-align: middle;
 }
 
 #company_name {
@@ -35,6 +30,7 @@
   // color: #003d99;
   color: #002d64;
 }
+
 
 #company_name_sub_text {
   font-size: 1.3em;
@@ -45,9 +41,12 @@
 
 
 
+
 /*-----------Contact Columns-------------------*/
+
+
 .contactCol {
-  line-height: 45px;
+  line-height: 44px;
   font-size: 1.5em;
   /*nice orange background-color: #E62E00;*/
   //display: flex;
@@ -55,30 +54,21 @@
   font-weight: 500;
 }
 
-.contactCol .phoneNo {
-  // font-size: 1.6em;
-}
-
-
 
 @media only screen and (max-width:767px) {
   .contactCol {
-    margin-bottom: 2px;
-    background-color: #E8ECF1;
+    margin-bottom: 6px;
+    //border-top: 1px solid #E8ECF1;
+    border: 1px solid #ced4da;
+
   }
-}
-
-@media only screen and (max-width:767px) {
-
   .customMargin {
-    margin-top: 2px;
-    margin-bottom: 2px;
+    margin-top: 4px;
+    margin-bottom: 4px;
     padding-top: 4px;
     padding-bottom: 4px;
   }
 }
-
-
 
 @media only screen and (min-width:768px) {
   .contactCol {
@@ -86,6 +76,27 @@
   }
 }
 
+
+.contactCol,
+.contactCol a,
+.contactCol a:link,
+.contactCol a:active,
+.contactCol a:hover,
+.contactCol a:visited {
+  text-decoration: none;
+  //color: #006ba1;
+  color: #006ba1;
+}
+
+.contactCol:hover {
+  transition: .3s background-color;
+  color: #006747;
+}
+
+.contactText,
+.keyHeader {
+  font-family: roboto-condensed-light, Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
+}
 
 @media only screen and (min-width:768px) {
   .hiddenOnMediumScreens {
@@ -105,18 +116,6 @@
   }
 }
 
-
-.contactCol,
-.contactCol a,
-.contactCol a:link,
-.contactCol a:active,
-.contactCol a:hover,
-.contactCol a:visited {
-  text-decoration: none;
-  //color: #006ba1;
-  color: #006ba1;
-}
-
 #whatsapp {
   color: #00b33c;
 }
@@ -130,15 +129,7 @@
 }
 
 
-.contactCol:hover {
-  transition: .3s background-color;
-  color: #006747;
-}
 
-.contactText,
-.keyHeader {
-  font-family: roboto-condensed-light, Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
-}
 
 @media only screen and (max-width:200px) {
   .contactText,
