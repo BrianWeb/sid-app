@@ -44,6 +44,15 @@
 
 /*-----------Contact Columns-------------------*/
 
+@media only screen and (max-width:767px) {
+
+  #contactContainer {
+
+
+  }
+}
+
+
 
 .contactCol {
   line-height: 44px;
@@ -59,14 +68,14 @@
   .contactCol {
     margin-bottom: 6px;
     //border-top: 1px solid #E8ECF1;
-    border: 1px solid #ced4da;
-
+    //border: 1px solid #007abf;
+    border:1px solid #ced4da;
+    background-color: #f5f5f5;
   }
   .customMargin {
     margin-top: 4px;
     margin-bottom: 4px;
-    padding-top: 4px;
-    padding-bottom: 4px;
+    padding:4px;
   }
 }
 
@@ -84,8 +93,8 @@
 .contactCol a:hover,
 .contactCol a:visited {
   text-decoration: none;
+  color: #002d64;
   //color: #006ba1;
-  color: #006ba1;
 }
 
 .contactCol:hover {
@@ -95,7 +104,7 @@
 
 .contactText,
 .keyHeader {
-  font-family: roboto-condensed-light, Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
+  font-family: roboto-condensed, Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
 }
 
 @media only screen and (min-width:768px) {
@@ -103,12 +112,12 @@
     display: none;
   }
 }
-
+/*
 #callUsColText {
   display: inline-block;
   color: #4c6b90;
   padding-right: 10px;
-}
+}*/
 
 @media only screen and (min-width:770px) and (max-width:870px) {
   #callUsColText {
@@ -117,7 +126,7 @@
 }
 
 #whatsapp {
-  color: #00b33c;
+  color: #009900;
 }
 
 .menuLevel2:hover,
