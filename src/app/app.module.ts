@@ -58,6 +58,7 @@ import { NoopAnimationsModule, BrowserAnimationsModule } from '@angular/platform
 import { SuccessComponent } from './common/contact-form/success/success.component';
 import { PageNotFoundComponent } from './common/contact-form/page-not-found/page-not-found.component';
 import { ContactComponent } from './common/contact-form/contact/contact.component';
+import { GoogleMapComponent } from './common/google-map/google-map.component';
 
 
 
@@ -87,7 +88,8 @@ import { ContactComponent } from './common/contact-form/contact/contact.componen
     BlogSidebarComponent,
     SuccessComponent,
     PageNotFoundComponent,
-    ContactComponent
+    ContactComponent,
+    GoogleMapComponent
   ],
   imports: [
     BrowserModule,

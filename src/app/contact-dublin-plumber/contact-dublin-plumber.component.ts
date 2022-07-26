@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { GoogleMapComponent }  from '../common/google-map/google-map.component';
+
 
 @Component({
   selector: 'app-contact-dublin-plumber',
