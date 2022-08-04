@@ -1,12 +1,13 @@
-
+html, body {
+  height: 100%;
+}
 
 body {
+  margin: 0;
+  font-family: 'BrandonTextWeb-Regular',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
   background-color: #f5f5f5;
 }
 
-.noPadding {
-  padding: 0px;
-}
 
 a {
   color: #006199
@@ -38,7 +39,6 @@ a:focus {
 }
 
 
-
 i:link {
   text-decoration: none;
 }
@@ -62,12 +62,21 @@ ul {
   padding: 0;
 }
 
-h1 {
-  color: #006199;
-  font-size: 3em;
-  font-weight: 200;
-  padding-bottom: 25px;
+h1, .h1SecondLine {
+  font-size: 2.6em;
+  font-weight: 600;
+  padding-bottom: 20px;
+  font-family: Roboto,Helvetica Neue,sans-serif;
 }
+
+h1 {
+  color: #007abf;
+}
+
+.h1SecondLine {
+  color: #007abf;
+}
+
 
 h2 {
   color: #006199;
@@ -108,6 +117,63 @@ img {
 video {
   max-width: 720px;
 }
+
+
+
+//FONTS:
+
+@font-face {
+  font-family: evogria;
+  src: url(fonts/evogria.otf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: velocista;
+  src: url(fonts/velocista.ttf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: upbolters;
+  src: url(fonts/upbolters.otf);
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'segoe-ui';
+  src: url('fonts/segoe-ui.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'segoe-ui-light';
+  src: url('fonts/segoe-ui-light.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'roboto-condensed-light';
+  src: url('fonts/roboto-condensed-light.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'brandon-text-web-regular';
+  src: url('fonts/brandon-text-web-regular.ttf') format('truetype');
+  font-display: swap;
+}
+
+
+
+
+/*CUSTOM ELEMENTS:  */
+
+.noPadding {
+  padding: 0px;
+}
+
 
 @media only screen and (max-width:992px) {
   .textWrap {
@@ -248,66 +314,9 @@ video {
     color: #00ccff;
   }
 }
-//COLOURS
-//FONTS:
-@font-face {
-  font-family: evogria;
-  src: url(fonts/evogria.otf);
-  font-display: swap;
-}
-
-@font-face {
-  font-family: velocista;
-  src: url(fonts/velocista.ttf);
-  font-display: swap;
-}
-
-@font-face {
-  font-family: upbolters;
-  src: url(fonts/upbolters.otf);
-  font-display: swap;
-}
 
 
-@font-face {
-  font-family: 'segoe-ui';
-  src: url('fonts/segoe-ui.ttf') format('truetype');
-  font-display: swap;
-}
 
-@font-face {
-  font-family: 'segoe-ui-light';
-  src: url('fonts/segoe-ui-light.ttf') format('truetype');
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'roboto-condensed-light';
-  src: url('fonts/roboto-condensed-light.ttf') format('truetype');
-  font-display: swap;
-}
-
-
-.fa-ambulance {
-  color: #e60000;
-}
-
-.fa-tint {
-  color: #66ccff;
-}
-
-.fa-fire {
-  color: #1a75ff;
-}
-
-.fa-wrench {
-  color: #ff9900;
-}
-
-.fa-thermometer-4 {
-  color: #ff4800;
-}
-/* --- Icons */
 /*----------Standard Horizontal NAV BAR -------------*/
 @media only screen and (max-width:768px) {
   div.scrollmenu {
@@ -354,20 +363,13 @@ div.scrollmenu a:hover, a:focus, a:active, a:target {
   border-bottom: .1em solid #00aaff;
 }
 
-/*
-div.scrollmenu a:active,
-div.scrollmenu a:hover {
-  color: whitesmoke;
-}
 
-  div.scrollmenu a:link,
-div.scrollmenu a:visited {
-  color: white;
-}
-  */
-/* border under links on hover */
 /*-------/Nav Bar-----------*/
+
+
 /*Overlay NAV BAR*/
+
+
 @media only screen and (min-width:778px) {
   #burgerBarVerticalNavBar {
     display: none;
@@ -389,7 +391,6 @@ div.scrollmenu a:visited {
   color: white;
 }
 
-;
 /* -- Pop out Menu from https://www.w3schools.com/howto/howto_js_sidenav.asp*/
 /* The side navigation menu */
 .sidenav {
@@ -443,47 +444,9 @@ div.scrollmenu a:visited {
   }
 }
 /* ---- PRODUCT ICONS ------ */
-/*Services Icons*/
-#servicesPageHeader {
-  background-color: white;
-}
-
-#productIconsAndTitleContainer {
-  background-color: white;
-}
 
 
-a:hover {
-  text-decoration: none;
-}
 
-a:link {
-  text-decoration: none;
-}
-
-a:visited {
-  text-decoration: none;
-}
-
-a:active {
-  text-decoration: none;
-}
-
-a:focus {
-  text-decoration: none;
-}
-
-
-.productSvgAndHeader, .defaultButton {
-  font: 1.2em;
-  margin-top: 1.1em;
-  margin-bottom: 1.1em;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  text-align: center;
-}
 
 .defaultButton {
   background-color: #006199;
@@ -547,25 +510,9 @@ svg {
 #callUsBanner a {
   color: white;
 }
-/* ---- Referrals ------*/
-#referrals {
-  background-color: #f5f5f5;
-}
-/**/
-ol li {
-  display: none;
-}
 
 
-a {
-  text-decoration: none
-}
-/* /Referrals */
-/* ---- Home Page about us*/
-#aboutUs {
-  background-color: #f5f5f5;
-}
-/* ----/ Home Page about us*/
+
 /* ---- Common Footer*/
 #commonFooter {
   background-color: #31404e;
@@ -587,11 +534,14 @@ a {
 }
 
 
-html, body {
-  height: 100%;
-}
 
-body {
-  margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+
+.defaultButton {
+  margin-top: 1.1em;
+  margin-bottom: 1.1em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
 }

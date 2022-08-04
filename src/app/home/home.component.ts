@@ -31,17 +31,12 @@ export class HomeComponent implements OnInit {
 
   reviews = [
 
-    {
-      name: 'Garry Ward',
-      date: '2 months ago',
-      positives: 'Professionalism, Punctuality, Quality, Responsiveness, Value.',
-      mainText: 'Really happy with the work and response time.  We had an emergency repair needed and Sid was out exactly when he said he would be. Completed the job to a high standard, and did full inspection through the house to ensure no other issues had arisen.This gave us confidence and reassurance.Highly recommended.'
-    },
+   
     {
       name: 'Rachel Somers',
       date: '2 months ago',
       positives: 'Professionalism, Punctuality, Quality, Responsiveness, Value.',
-      mainText: 'I would highly recommend Sids Plumbing service. At very short notice Sid helped me out with a leak eventhough he was up to his eyes.He was very efficient and definitely knew his profession.Would have no qualms about recommending him.'
+      mainText: 'I would highly recommend Sids Plumbing service. At very short notice Sid helped me out with a leak even though he was up to his eyes. He was very efficient and definitely knew his profession. Would have no qualms about recommending him.'
     },
     {
       name: 'David Gerla',
@@ -53,10 +48,26 @@ export class HomeComponent implements OnInit {
       name: 'Francine Shelly',
       date: 'a months ago',
       positives: 'Professionalism, Punctuality, Quality, Responsiveness, Value.',
-      mainText: "Sid's Plumbing is an excellent service . Reliable efficent ,professional and friendly.  Very impressive . I will be sharing his number with everyone I know! Thanks for the great work !"
-    }];
+      mainText: "Sid's Plumbing is an excellent service . Reliable efficent ,professional and friendly.  Very impressive. I will be sharing his number with everyone I know! Thanks for the great work !"
+    },
+    {
+      name: 'Alex Mulvagh ',
+      date: '3 months ago',
+      positives: 'Professionalism, Punctuality, Quality, Responsiveness, Value',
+      mainText: "Sid was fantastic.. Good communication, very pleasant to deal with, fitted me in quickly, and got the job done!! Would highly recommend..."
+    }
+  ];
 
   tests = [
+
+
+    {
+      name: 'Garry Ward',
+      date: '2 months ago',
+      positives: 'Professionalism, Punctuality, Quality, Responsiveness, Value.',
+      summaryText: 'summary text',
+      mainText: 'Really happy with the work and response time.  We had an emergency repair needed and Sid was out exactly when he said he would be. Completed the job to a high standard, and did full inspection through the house to ensure no other issues had arisen.This gave us confidence and reassurance. Highly recommended.'
+    },
 
     {
       name: "Helen O'Reilly",
@@ -70,12 +81,7 @@ export class HomeComponent implements OnInit {
       positives: 'Professionalism, Punctuality, Quality, Responsiveness, Value',
       mainText: "I had a burst pipe from an upstairs sink.Water pouring down onto the ceiling below.I found Sid's number online and called him. He was just finishing another job but raced over to me in a few minutes and stopped the leak immediately and fixed the damaged pipe which was very awkwardly placed beneath some tiles. Fantastic response and terrific quality of work. Also - a lovely chap clearly with decades of experience. I couldn't rate him highly enough!"
     },
-    {
-      name: 'Alex Mulvagh ',
-      date: '3 months ago',
-      positives: 'Professionalism, Punctuality, Quality, Responsiveness, Value',
-      mainText: "Sid was fantastic.. Good communication, very pleasant to deal with, fitted me in quickly, and got the job done!! Would highly recommend..."
-    },
+   
     {
       name: 'Colette Dunne Green',
       date: '3 months ago',

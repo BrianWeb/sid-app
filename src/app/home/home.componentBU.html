@@ -64,57 +64,122 @@
   </div>
 
 
+  <!--Reviews-->
+
+  <div class="row">
+
+    <div class="col-md-3 col-lg-3 col-xl-3">
+      Col 1
+
+    </div><!--/col-->
+
+
+    <div class="col-md-3 col-lg-3 col-xl-3">
+    Col 2
+
+    </div><!--/col-->
+
+
+    <div class="col-md-3 col-lg-3 col-xl-3">
+    Col 3
+
+    </div><!--/col-->
+
+  </div><!--/row-->
+
+  <!--/Reviews-->
+
+
   <!---Welcome text & Contact form-->
+  <article id="welcomeAndContactForm" class="article-lg container">
 
+    <div class="row justifyTextOnLargeScreens">
+      <div class="col-12   col-sm-12   col-md-12   col-lg-6  col-xl-6">
+        <ul>
+          <li *ngFor="let homePageIntro of homePageIntros">
+            <div>
+              <markdown [data]="homePageIntro.fields.homePageIntroTextField"></markdown>
+            </div>
+          </li>
+        </ul>
 
-  <article class="row justify-content-center centerText article-lg" id="reviewArticle">
-
-
-    <!--Reviews-->
-
-    <h1>Our Happy Customers</h1>
-
-    <section class="flexContainer">
-
-      <div *ngFor="let review of reviews; index as i" class="reviewEntry flexItem">
-        <div class="reviewMainText">{{review.mainText}}</div>
-        <div class="reviewName"><strong>{{review.name}}</strong><br /></div>
-        <i class="fa fa-star" aria-hidden="true"> </i><i class="fa fa-star" aria-hidden="true"> </i><i class="fa fa-star" aria-hidden="true"> </i><i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i><br />
       </div>
 
-    </section>
+      <div class="col-12   col-sm-12   col-md-12  col-lg-5 offset-lg-1   col-xl-5 offset-xl-1">
+        <app-contact></app-contact>
+      </div>
 
 
+    </div>
 
-    <!--/Reviews-->
   </article><!--/ <div class="container-fluid">--><!---/ Welcome text & Contact form-->
 
-  <div id="homePageMainTextAndForm">
-    <div class="container">
-      <div class="row">
-
-        <article class="article-sm  col-12   col-sm-12   col-md-12   col-lg-7  col-xl-7  ">
-          <h1>Dublin's Reliable Plumbing, Heating & Gas Experts:</h1>
-          <ul>
-            <li *ngFor="let homePageIntro of homePageIntros">
-              <div class="justifyTextOnLargeScreens">
-                <markdown [data]="homePageIntro.fields.homePageIntroTextField"></markdown>
-              </div>
-            </li>
-          </ul>
-        </article>
-
-        <article id="contactFormCol" class="article-sm  col-12   col-sm-12   col-md-12   col-lg-4 offset-lg-1   col-xl-4 offset-xl-1">
-          <app-contact></app-contact>
-        </article>
-
-      </div>
-    </div>
-  </div>
 
   <app-services-main></app-services-main>
-<!---->
-  
+
+  <article id="referrals" class="article-lg">
+
+    <div class="container">
+      <h2 class="text-center articleTitle">What Our Clients Say</h2>
+      <br />
+
+      <div *ngFor="let review of reviews; index as i" id="reviews">
+        <div class="reviewEntry">
+          <div class="row">
+            <div class="col-12  col-sm-12 col-md-3 col-lg-2 col-xl-2">
+              <div class="reviewName"><strong>{{review.name}}</strong><br /></div>
+              <i class="fa fa-star" aria-hidden="true"> </i><i class="fa fa-star" aria-hidden="true"> </i><i class="fa fa-star" aria-hidden="true"> </i><i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i><br />
+              {{review.date}}
+            </div>
+            <div class="col-12  col-sm-12 col-md-9 col-lg-10 col-xl-10">
+              <strong>Positives: </strong>{{review.positives}}<br />
+              <div class="reviewMainText">{{review.mainText}}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="collapse" id="collapseExample">
+        <div *ngFor="let test of tests; index as i" id="reviews">
+          <div class="reviewEntry">
+            <div class="row">
+              <div class="col-12  col-sm-12 col-md-3 col-lg-2 col-xl-2">
+                <div class="reviewName"><strong>{{test.name}}</strong><br /></div>
+                <i class="fa fa-star" aria-hidden="true"> </i><i class="fa fa-star" aria-hidden="true"> </i><i class="fa fa-star" aria-hidden="true"> </i><i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i><br />
+                {{test.date}}
+              </div>
+              <div class="col-12  col-sm-12 col-md-9 col-lg-10 col-xl-10">
+                <strong>Positives: </strong>{{test.positives}}<br />
+                <div class="reviewMainText">{{test.mainText}}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <p>
+        <a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          <h3 (click)="toggleLink()">{{showLink ? 'See less' : 'See more...'}}</h3>
+        </a>
+
+      </p>
+
+      <div class="row justify-content-center">
+        <a href="https://www.google.com/search?q=sids+plumbing&oq=sids&aqs=chrome.2.69i57j46j0l3.3469j0j7&client=ms-android-motorola-rev2&sourceid=chrome-mobile&ie=UTF-8#trex=m_t:lcl_akp,rc_f:rln,rc_ludocids:18379219811283239732,ru_lqi:Cg1zaWRzIHBsdW1iaW5nSI239umsj4CACFomCg1zaWRzIHBsdW1iaW5nEAAQARgAGAEiDXNpZHMgcGx1bWJpbmc,trex_id:v3j6Zc">
+
+          <div class="defaultButton">
+            Leave a Review
+          </div>
+
+        </a>
+      </div>
+
+
+
+    </div>
+
+  </article>
 
   <article id="callUsBanner" class="centerText article-lg">
     <div>
@@ -138,4 +203,10 @@
 
   </article>
 
-</div><!--/container-->
+
+
+</div>
+
+
+
+
