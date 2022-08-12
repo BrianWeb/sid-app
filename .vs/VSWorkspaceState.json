@@ -3,11 +3,14 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\common\\contact-form\\netlify-forms",
-    "\\src\\app\\home",
-    "\\src\\app\\plumbing-services",
-    "\\src\\app\\plumbing-services\\common\\services-footer"
+    "\\src\\app\\common",
+    "\\src\\app\\common\\about-us",
+    "\\src\\app\\common\\google-map",
+    "\\src\\app\\plumbing-services\\common",
+    "\\src\\app\\plumbing-services\\common\\services-footer",
+    "\\src\\app\\plumbing-services\\plumbing-services-dublin",
+    "\\src\\assets\\vendors"
   ],
-  "SelectedNode": "\\src\\styles.scss",
+  "SelectedNode": "\\src\\app\\common\\about-us\\about-us.component.html",
   "PreviewInSolutionExplorer": false
 }
