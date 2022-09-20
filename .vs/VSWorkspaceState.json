@@ -3,14 +3,9 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\common",
     "\\src\\app\\common\\about-us",
-    "\\src\\app\\common\\google-map",
-    "\\src\\app\\plumbing-services\\common",
-    "\\src\\app\\plumbing-services\\common\\services-footer",
-    "\\src\\app\\plumbing-services\\plumbing-services-dublin",
-    "\\src\\assets\\vendors"
+    "\\src\\app\\common\\google-map"
   ],
-  "SelectedNode": "\\src\\app\\common\\about-us\\about-us.component.html",
+  "SelectedNode": "\\src\\app\\app.component.html",
   "PreviewInSolutionExplorer": false
 }
