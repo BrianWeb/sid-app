@@ -1,40 +1,50 @@
 <div class="container  margin-top">
 
-  <app-blog-sidebar></app-blog-sidebar>
-
   <div class="row">
 
-    <article class="article-sm">
+    <div class="col-12   col-sm-12   col-md-3   col-lg-3  col-xl-3">
+      <app-blog-sidebar></app-blog-sidebar>
+    </div>
 
-      <div *ngIf="blogPost">
+    <div class="col-12   col-sm-12   col-md-9   col-lg-9  col-xl-9">
+      <article class="article-sm">
 
+        <div *ngIf="blogPost">
 
-        <h1>{{ blogPost.fields.blogPostTitle}}</h1>
+          <div id="blogPostEntry">
 
-        <markdown [data]="blogPost.fields.blogPostText"></markdown>
+            <h1>{{ blogPost.fields.blogPostTitle}}</h1>
 
+            <markdown [data]="blogPost.fields.blogPostText"></markdown>
 
-        <img src="{{ blogPost.fields.blogPostImage.fields.file.url }}" id="leaking-tap" class="textWrap" alt="{{blogPost.fields.blogPostImage.fields.name }}">
+            <div class="row">
 
-        <br />
-        <!--need to replace this with Marked <showdown smartIndentationFix [value]="blogPostText"></showdown>
-  -->
+              <div class="col-12   col-sm-12   col-md-5   col-lg-5  col-xl-5">
 
-        <div *ngIf="blogPostVideos">
-          <video controls>
-            <source [src]="blogPost.fields.blogPostVideo.fields.file.url" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
+                <img src="{{ blogPost.fields.blogPostImage.fields.file.url }}" id="leaking-tap" alt="{{blogPost.fields.blogPostImage.fields.name }}">
+              </div>
+
+              <div class="col-12   col-sm-12   col-md-7   col-lg-7  col-xl-7">
+                <!--need to replace this with Marked <showdown smartIndentationFix [value]="blogPostText"></showdown>
+                -->
+
+                <div *ngIf="blogPostVideos">
+                  <video controls>
+                    <source [src]="blogPost.fields.blogPostVideo.fields.file.url" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
         </div>
 
-      </div>
-
-
-    </article>
-
+      </article>
+    </div>
 
   </div>
 
 </div>
-
-

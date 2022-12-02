@@ -1,8 +1,12 @@
 
+.column{
+    flex-direction: column;
+}
 .customNavItem {
-border: 1px solid green;
+  border: 1px solid #a2c3c3;
   padding: 10px;
   margin-bottom: 15px;
+  box-shadow: 2px 3px #d0e1e1;
 }
 
 .customNavItem:hover {
