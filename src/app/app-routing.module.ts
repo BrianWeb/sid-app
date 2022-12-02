@@ -71,6 +71,7 @@ const routes: Routes = [
   //BLOG
   { path: 'blog', component: BlogComponent },
   { path: 'blog/:slug', component: BlogPostComponent },
+  { path: 'blog/preview/:slug', component: BlogPostComponent },
 
   { path: 'home', component: HomeComponent },
 
