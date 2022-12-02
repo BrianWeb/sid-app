@@ -59,6 +59,7 @@ import { SuccessComponent } from './common/contact-form/success/success.componen
 import { PageNotFoundComponent } from './common/contact-form/page-not-found/page-not-found.component';
 import { ContactComponent } from './common/contact-form/contact/contact.component';
 import { GoogleMapComponent } from './common/google-map/google-map.component';
+import { BlogPostPreviewComponent } from './blog/blog-post-preview/blog-post-preview.component';
 
 
 
@@ -89,7 +90,8 @@ import { GoogleMapComponent } from './common/google-map/google-map.component';
     SuccessComponent,
     PageNotFoundComponent,
     ContactComponent,
-    GoogleMapComponent
+    GoogleMapComponent,
+    BlogPostPreviewComponent
   ],
   imports: [
     BrowserModule,
