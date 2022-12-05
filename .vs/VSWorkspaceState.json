@@ -3,9 +3,12 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\common\\about-us",
-    "\\src\\app\\common\\google-map"
+    "\\src\\app\\blog",
+    "\\src\\app\\blog\\blog-post",
+    "\\src\\app\\blog\\blog-sidebar",
+    "\\src\\app\\contact-dublin-plumber",
+    "\\src\\app\\contentful.service"
   ],
-  "SelectedNode": "\\src\\app\\app.component.html",
+  "SelectedNode": "\\src\\app\\blog\\blog-sidebar\\blog-sidebar.component.scss",
   "PreviewInSolutionExplorer": false
 }
