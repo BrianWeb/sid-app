@@ -5,10 +5,11 @@
     "\\src\\app",
     "\\src\\app\\blog",
     "\\src\\app\\blog\\blog-post",
+    "\\src\\app\\blog\\blog-post-preview",
     "\\src\\app\\blog\\blog-sidebar",
-    "\\src\\app\\contact-dublin-plumber",
-    "\\src\\app\\contentful.service"
+    "\\src\\app\\contentful.service",
+    "\\src\\app\\home"
   ],
-  "SelectedNode": "\\src\\app\\blog\\blog-sidebar\\blog-sidebar.component.scss",
+  "SelectedNode": "\\src\\app\\blog\\blog-sidebar\\blog-sidebar.component.html",
   "PreviewInSolutionExplorer": false
 }

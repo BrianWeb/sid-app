@@ -20,7 +20,7 @@ export class BlogPostComponent implements OnInit {
   blogPost: Entry<any>;
   blogPostText: string;
   blogPostVideos: any[] = [];
-
+  youTubeVideos: any[] = [];
 
   constructor(private contentfulService: ContentfulService, private route: ActivatedRoute) { }
 
