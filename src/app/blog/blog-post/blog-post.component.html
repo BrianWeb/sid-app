@@ -2,11 +2,9 @@
 
   <div class="row">
 
-    <div class="col-12   col-sm-12   col-md-3   col-lg-3  col-xl-3">
-      <app-blog-sidebar></app-blog-sidebar>
-    </div>
 
-    <div class="col-12   col-sm-12   col-md-9   col-lg-9  col-xl-9">
+
+
       
         <div *ngIf="blogPost">
 
@@ -17,16 +15,20 @@
             <markdown [data]="blogPost.fields.blogPostText"></markdown>
 
             <div class="row">
-
+            
               <div class="col-12   col-sm-12   col-md-5   col-lg-5  col-xl-5">
-
+              
                 <img src="{{ blogPost.fields.blogPostImage.fields.file.url }}" id="leaking-tap" alt="{{blogPost.fields.blogPostImage.fields.name }}">
               </div>
-
+             
               <div class="col-12   col-sm-12   col-md-7   col-lg-7  col-xl-7">
+              </div>
+
+            </div>
+
                 <!--need to replace this with Marked <showdown smartIndentationFix [value]="blogPostText"></showdown>
   -->
-
+  <!--
                 <div *ngIf="blogPostVideos">
                   <video controls>
                     <source [src]="blogPost.fields.blogPostVideo.fields.file.url" type="video/mp4">
@@ -34,24 +36,29 @@
                   </video>
                 </div>
 
+          
+                 <!-- <div *ngIf="youTubeVideoUrl">
+                <h1>{{ blogPost.fields.blogPostTitle}}</h1> 
+                 
 
-                <div *ngIf="youTubeVideos">
-                  <h1>{{ blogPost.fields.blogPostTitle}}</h1>
-                  {{blogPost.fields.youTubeVideo"}}
-                  {{ blogPost.fields.blogPostImage.fields.file.url }}
+
+
+                     {{blogPost.fields.youTubeVideoUrl}}
+                <iframe width="560" height="315"  [src]="safeSrc"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+              -->
 
                 </div>
-              </div>
-
             </div>
 
           </div>
 
-        </div>
+   
 
-     
-    </div>
 
-  </div>
+
+
+
+
 
 </div>

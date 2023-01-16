@@ -70,7 +70,7 @@ const routes: Routes = [
 
   //BLOG
   { path: 'blog', component: BlogComponent },
-  { path: 'blog/:slug', component: BlogPostComponent },
+  { path: 'blog/:slug', component: BlogComponent },//BlogComponent contains BlogPostComponent. Using BlogComponent because it also has the sidebar menu. 
   { path: 'blog/preview/:slug', component: BlogPostComponent },
 
   { path: 'home', component: HomeComponent },

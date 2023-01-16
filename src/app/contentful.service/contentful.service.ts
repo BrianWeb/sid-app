@@ -16,7 +16,8 @@ const CONFIG = {
     servicesFooter: 'servicesFooter',
     faq: 'faq',
     blogPost: 'blogPost',
-    blogPostText: 'blogPost.fields.blogPostText'
+    blogPostText: 'blogPost.fields.blogPostText',
+    youTubeVideoUrl:   'blogPost.fields.youTubeVideoUrl'
   }
 }
 
