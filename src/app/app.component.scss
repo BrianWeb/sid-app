@@ -199,3 +199,51 @@ div.scrollmenu a {
 div.scrollmenu a:hover, a:focus, a:active, a:target {
   border-bottom: .1em solid #00aaff;
 }
+
+
+/* ---- Common Footer*/
+#commonFooter {
+  background-color: #31404e;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: #e6f7ff;
+
+  h3 {
+    color: white;
+  }
+
+  a {
+    color: #e6f7ff;
+  }
+
+  a:hover {
+    color: #00aaff;
+  }
+}
+
+
+/* ---- Common Footer*/
+#commonFooter {
+  background-color: #31404e;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: #e6f7ff;
+
+  h3 {
+    color: white;
+  }
+
+  a {
+    color: #e6f7ff;
+  }
+
+  a:hover {
+    color: #00aaff;
+  }
+}
+
+@media only screen and (max-width:540px) {//google lighthouse suggested this to make clicking on links more accessible on mobile devices
+  #commonFooter li {
+    padding-bottom: 15px;
+  }
+}

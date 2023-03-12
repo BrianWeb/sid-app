@@ -3,13 +3,10 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\blog",
     "\\src\\app\\blog\\blog-post",
     "\\src\\app\\blog\\blog-post-preview",
-    "\\src\\app\\blog\\blog-sidebar",
-    "\\src\\app\\contentful.service",
-    "\\src\\app\\home"
+    "\\src\\app\\blog\\blog-sidebar"
   ],
-  "SelectedNode": "\\src\\app\\blog\\blog-sidebar\\blog-sidebar.component.html",
+  "SelectedNode": "\\src\\app\\home",
   "PreviewInSolutionExplorer": false
 }
