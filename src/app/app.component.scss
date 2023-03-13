@@ -243,7 +243,12 @@ div.scrollmenu a:hover, a:focus, a:active, a:target {
 }
 
 @media only screen and (max-width:540px) {//google lighthouse suggested this to make clicking on links more accessible on mobile devices
-  #commonFooter li {
-    padding-bottom: 15px;
+  #commonFooter a {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
   }
+
 }
