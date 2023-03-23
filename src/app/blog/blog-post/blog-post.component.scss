@@ -15,13 +15,19 @@ video{max-width:100%;
     
 }
 
+img{max-width: 500px;padding:20px;}
+
 #video {
   padding-top: 30px;
   padding-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 article {
   padding-top: 0px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }

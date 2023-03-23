@@ -39,7 +39,7 @@ export class BlogPostComponent implements OnInit {
         this.blogPost = blogPost;
        // console.log(blogPost);
        // console.log("blogpost video url is: " + this.blogPost.fields.youTubeVideoUrl); This works 
-        this.blogPostVideoUrl = this.sanitizer.bypassSecurityTrustResourceUrl(this.blogPost.fields.youTubeVideoUrl);
+        this.blogPostVideoUrl = this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/" + this.blogPost.fields.youTubeVideoUrl);
         //console.log("blogpost video url is: " + this.blogPostVideoUrl);
       }
       );
