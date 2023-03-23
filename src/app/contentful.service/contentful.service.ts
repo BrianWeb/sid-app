@@ -17,7 +17,8 @@ const CONFIG = {
     faq: 'faq',
     blogPost: 'blogPost',
     blogPostText: 'blogPost.fields.blogPostText',
-    youTubeVideoUrl:   'blogPost.fields.youTubeVideoUrl'
+    youTubeVideoUrl: 'blogPost.fields.youTubeVideoUrl'
+
   }
 }
 

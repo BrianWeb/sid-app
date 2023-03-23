@@ -22,9 +22,10 @@ export class BlogPostComponent implements OnInit {
 
   blogPost: Entry<any>;
   blogPostText:  any[];
-  blogPostVideos: any[] = [];
-   safeSrc: SafeResourceUrl;
-   videos: Entry<any>[] = [];
+  //blogPostVideoUrl: any[] = [];
+  blogPostVideoUrl: SafeResourceUrl;
+  // safeSrc: SafeResourceUrl;
+
 
   constructor(private contentfulService: ContentfulService, private route: ActivatedRoute, private sanitizer: DomSanitizer) {
    
@@ -32,18 +33,19 @@ export class BlogPostComponent implements OnInit {
 
   ngOnInit(): void {
     this.route.paramMap
-      .pipe(switchMap((params: ParamMap) => this.contentfulService.getBlogPost(params.get('slug')as string)))
+      .pipe(switchMap((params: ParamMap) =>
+        this.contentfulService.getBlogPost(params.get('slug') as string)))
       .subscribe(blogPost => {
         this.blogPost = blogPost;
-      // this.videos = blogPost.fields.youTubeVideoUrl;
-        //this.blogPostText = blogPost.fields.blogPostText;
-       // this.blogPostVideos = blogPost.fields.blogPostVideo;
-       //this.youTubeVideoUrl = blogPost.fields.youTubeVideoUrl;
+       // console.log(blogPost);
+       // console.log("blogpost video url is: " + this.blogPost.fields.youTubeVideoUrl); This works 
+        this.blogPostVideoUrl = this.sanitizer.bypassSecurityTrustResourceUrl(this.blogPost.fields.youTubeVideoUrl);
+        //console.log("blogpost video url is: " + this.blogPostVideoUrl);
       }
       );
-      this.safeSrc =  this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/c9F5kMUfFKk");
+      //this.safeSrc =  this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/c9F5kMUfFKk");
 
-    
+ 
 
   }
 

@@ -2,63 +2,65 @@
 
   <div class="row">
 
+    <div *ngIf="blogPost">
 
+      <div id="blogPostEntry">
 
+        <h1>{{ blogPost.fields.blogPostTitle}}</h1>
 
-      
-        <div *ngIf="blogPost">
+        <markdown [data]="blogPost.fields.blogPostText"></markdown>
 
-          <div id="blogPostEntry">
+        <div class="row">
 
-            <h1>{{ blogPost.fields.blogPostTitle}}</h1>
+          <div class="col-12   col-sm-12   col-md-5   col-lg-5  col-xl-5">
 
-            <markdown [data]="blogPost.fields.blogPostText"></markdown>
-
-            <div class="row">
-            
-              <div class="col-12   col-sm-12   col-md-5   col-lg-5  col-xl-5">
-              
-                <img src="{{ blogPost.fields.blogPostImage.fields.file.url }}" id="leaking-tap" alt="{{blogPost.fields.blogPostImage.fields.name }}">
-              </div>
-             
-              <div class="col-12   col-sm-12   col-md-7   col-lg-7  col-xl-7">
-              </div>
-
-            </div>
-
-                <!--need to replace this with Marked <showdown smartIndentationFix [value]="blogPostText"></showdown>
-  -->
-  <!--
-                <div *ngIf="blogPostVideos">
-                  <video controls>
-                    <source [src]="blogPost.fields.blogPostVideo.fields.file.url" type="video/mp4">
-                    Your browser does not support the video tag.
-                  </video>
-                </div>
-
-          
-                 <!-- <div *ngIf="youTubeVideoUrl">
-                <h1>{{ blogPost.fields.blogPostTitle}}</h1> 
-                 
-
-
-
-                     {{blogPost.fields.youTubeVideoUrl}}
-                <iframe width="560" height="315"  [src]="safeSrc"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-              -->
-
-                </div>
-            </div>
-
+            <img src="{{ blogPost.fields.blogPostImage.fields.file.url }}" id="leaking-tap" alt="{{blogPost.fields.blogPostImage.fields.name }}">
           </div>
 
-   
+          <div class="col-12   col-sm-12   col-md-7   col-lg-7  col-xl-7">
+          </div>
+
+        </div>
+
+        <!--need to replace this with Marked <showdown smartIndentationFix [value]="blogPostText"></showdown>
+        -->
+        <!--
+          <div *ngIf="blogPostVideos">
+            <video controls>
+              <source [src]="blogPost.fields.blogPostVideo.fields.file.url" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+
+           <!-- <div *ngIf="youTubeVideoUrl">
+          <h1>{{ blogPost.fields.blogPostTitle}}</h1>
 
 
 
 
+               {{blogPost.fields.youTubeVideoUrl}}
+          <iframe width="560" height="315"  [src]="safeSrc"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+        -->
+
+      </div>
+
+      <!--{{ blogPost.fields.youTubeVideoUrl}}-->
+
+      <div *ngIf="blogPost.fields.youTubeVideoUrl">
+        <iframe width="560" height="315"
+                [src]="blogPostVideoUrl"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+        </iframe>
+      </div>
+
+    </div>
+
+  </div>
 
 
 </div>
+
