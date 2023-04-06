@@ -3,8 +3,10 @@
     "",
     "\\src",
     "\\src\\app",
+    "\\src\\app\\blog",
+    "\\src\\app\\blog\\blog-post",
     "\\src\\app\\home"
   ],
-  "SelectedNode": "\\src\\app\\home\\home.component.html",
+  "SelectedNode": "\\angular.json",
   "PreviewInSolutionExplorer": false
 }
