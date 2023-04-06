@@ -12,6 +12,9 @@ import { Entry } from 'contentful';
 
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
+//Meta for populating the page Title, which comes from contentful's pageTitle field
+import { Meta } from '@angular/platform-browser';
+//see https://www.codeproject.com/Tips/5322155/How-to-Set-HTML-Meta-Tags-in-Angular for more info
 
 @Component({
   selector: 'app-blog-post',
@@ -27,7 +30,12 @@ export class BlogPostComponent implements OnInit {
   // safeSrc: SafeResourceUrl;
 
 
-  constructor(private contentfulService: ContentfulService, private route: ActivatedRoute, private sanitizer: DomSanitizer) {
+  constructor(
+    private contentfulService: ContentfulService,
+    private route: ActivatedRoute,
+    private sanitizer: DomSanitizer,
+    private meta: Meta
+  ) {
    
   }
 
@@ -45,7 +53,10 @@ export class BlogPostComponent implements OnInit {
       );
       //this.safeSrc =  this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/c9F5kMUfFKk");
 
- 
+    this.meta.addTag({
+      name: 'description',
+      content: 'This is an article about Angular Meta service'
+    });
 
   }
 

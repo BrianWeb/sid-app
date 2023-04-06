@@ -1,30 +1,47 @@
-<div class="container  margin-top">
+<!DOCTYPE html>
 
-  <div class="row">
-    <div *ngIf="blogPost">
-
-      <div id="blogPostEntry">
-
-        <h1>{{ blogPost.fields.blogPostTitle}}</h1>
-
-        <markdown [data]="blogPost.fields.blogPostText"></markdown>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <title>ttt{{ blogPost.fields.pageTitle }}</title>
+</head>
+<body>
 
 
-        <img class="centerImage" src="{{ blogPost.fields.blogPostImage.fields.file.url }}" id="leaking-tap" alt="{{blogPost.fields.blogPostImage.fields.name }}">
 
-        <div *ngIf="blogPost.fields.youTubeVideoUrl" id="video" class="centerImage" >
-          <iframe width="560" height="315"
-                  [src]="blogPostVideoUrl"
-                  title="YouTube video player" frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                  class="centerImage">
-          </iframe>
+
+  <div class="container  margin-top">
+
+    <div class="row">
+      <div *ngIf="blogPost">
+
+        <div id="blogPostEntry">
+
+          <h1>{{ blogPost.fields.blogPostTitle}}</h1>
+
+          <markdown [data]="blogPost.fields.blogPostText"></markdown>
+
+
+          <img class="centerImage" src="{{ blogPost.fields.blogPostImage.fields.file.url }}" id="leaking-tap" alt="{{blogPost.fields.blogPostImage.fields.name }}">
+
+          <div *ngIf="blogPost.fields.youTubeVideoUrl" id="video" class="centerImage">
+            <iframe width="560" height="315"
+                    [src]="blogPostVideoUrl"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                    class="centerImage">
+            </iframe>
+          </div>
+
         </div>
-
       </div>
     </div>
+
+    
+
   </div>
 
-</div>
 
+</body>
+</html>
