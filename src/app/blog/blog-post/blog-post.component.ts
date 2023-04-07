@@ -68,15 +68,4 @@ export class BlogPostComponent implements OnInit {
 
   }
 
-
-
-  /*
-  getVideos() {
-    let newArrayVideoUrls = this.blogPostVideos.map(function (extractArrayVideoUrls) {
-        return extractArrayVideoUrls.fields.file.url;
-      })
-    let newArrayVideoTitles = this.blogPostVideos.map(function (extractArrayVideoTitles) {
-        return extractArrayVideoTitles.fields.title;
-      })
-  }*/
 }
