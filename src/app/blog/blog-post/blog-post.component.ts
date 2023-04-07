@@ -35,9 +35,7 @@ export class BlogPostComponent implements OnInit {
     private route: ActivatedRoute,
     private sanitizer: DomSanitizer,
     private meta: Meta
-  ) {
-   
-  }
+  ) {}
 
   ngOnInit(): void {
     this.route.paramMap
