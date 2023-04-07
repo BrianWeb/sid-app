@@ -94,7 +94,7 @@ import { BlogPostPreviewComponent } from './blog/blog-post-preview/blog-post-pre
     BlogPostPreviewComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,

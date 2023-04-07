@@ -17,13 +17,13 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/sid-app",
+            "outputPath": "dist/sid-app/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-          "assets": [
+            "assets": [
               "src/favicon.ico",
               "src/assets",
               "src/_redirects",
@@ -33,13 +33,13 @@
               "src/sitemap_index.xml"
             ],
             "styles": [
-              //"./node_modules/bootstrap/dist/css/bootstrap.min.css",
-              //"./node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
               "src/assets/vendors/bootstrap.min.css",
               "src/styles.scss",
               "src/fonts/font_awesome/css/all.min.css"
             ],
-            "scripts": [ "node_modules/marked/marked.min.js" ]
+            "scripts": [
+              "node_modules/marked/marked.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -109,8 +109,82 @@
             ],
             "scripts": []
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
+          }
+        },
+        "server": {
+          "builder": "@angular-devkit/build-angular:server",
+          "options": {
+            "outputPath": "dist/sid-app/server",
+            "main": "server.ts",
+            "tsConfig": "tsconfig.server.json",
+            "inlineStyleLanguage": "scss"
+          },
+          "configurations": {
+            "production": {
+              "outputHashing": "media",
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ]
+            },
+            "development": {
+              "optimization": true,
+              "sourceMap": true,
+              "extractLicenses": false,
+              "vendorChunk": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve-ssr": {
+          "builder": "@nguniversal/builders:ssr-dev-server",
+          "configurations": {
+            "development": {
+              "browserTarget": "sid-app:build:development",
+              "serverTarget": "sid-app:server:development"
+            },
+            "production": {
+              "browserTarget": "sid-app:build:production",
+              "serverTarget": "sid-app:server:production"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "prerender": {
+          "builder": "@nguniversal/builders:prerender",
+          "options": {
+            "routes": [
+              "/"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "sid-app:build:production",
+              "serverTarget": "sid-app:server:production"
+            },
+            "development": {
+              "browserTarget": "sid-app:build:development",
+              "serverTarget": "sid-app:server:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }
+  },
+  "cli": {
+    "schematicCollections": [
+      "@angular-eslint/schematics"
+    ]
   }
 }

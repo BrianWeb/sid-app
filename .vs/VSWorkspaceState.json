@@ -1,12 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\src",
-    "\\src\\app",
-    "\\src\\app\\blog",
-    "\\src\\app\\blog\\blog-post",
-    "\\src\\app\\home"
+    ""
   ],
-  "SelectedNode": "\\angular.json",
+  "SelectedNode": "\\package-lock.json",
   "PreviewInSolutionExplorer": false
 }
