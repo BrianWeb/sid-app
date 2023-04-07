@@ -38,9 +38,7 @@ export class AreaDetailComponent implements OnInit {
         this.areaName = this.area.fields.areaName;
 
         this.meta.addTag({
-          title: 'Emergency Plumber' + this.areaName,
-          name: 'description',
-          content: 'This is an article about Angular Meta service'
+          title: 'Emergency Plumber ' + this.areaName,
         });
       });
 

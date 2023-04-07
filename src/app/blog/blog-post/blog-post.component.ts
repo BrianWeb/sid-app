@@ -51,9 +51,9 @@ export class BlogPostComponent implements OnInit {
         console.log(this.blogPostTitle);
 
         this.meta.addTag({
-          title: this.blogPostTitle,
-          name: 'description',
-          content: 'This is an article about Angular Meta service'
+          title: this.blogPostTitle
+          //name: 'description',
+         // content: 'This is an article about Angular Meta service'
         });
 
       }
