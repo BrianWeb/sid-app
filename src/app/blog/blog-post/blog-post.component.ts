@@ -24,8 +24,8 @@ import { Meta } from '@angular/platform-browser';
 export class BlogPostComponent implements OnInit {
 
   blogPost: Entry<any>;
-  blogPostText:  any[];
-  //blogPostVideoUrl: any[] = [];
+  //blogPostText:  any[]; not used 
+  blogPostTitle: string = "";
   blogPostVideoUrl: SafeResourceUrl;
   // safeSrc: SafeResourceUrl;
 
@@ -49,14 +49,22 @@ export class BlogPostComponent implements OnInit {
        // console.log("blogpost video url is: " + this.blogPost.fields.youTubeVideoUrl); This works 
         this.blogPostVideoUrl = this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/" + this.blogPost.fields.youTubeVideoUrl);
         //console.log("blogpost video url is: " + this.blogPostVideoUrl);
+        this.blogPostTitle = this.blogPost.fields.blogPostTitle;
+        console.log(this.blogPostTitle);
+
+        this.meta.addTag({
+          title: this.blogPostTitle,
+          name: 'description',
+          content: 'This is an article about Angular Meta service'
+        });
+
       }
       );
       //this.safeSrc =  this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/c9F5kMUfFKk");
 
-    this.meta.addTag({
-      name: 'description',
-      content: 'This is an article about Angular Meta service'
-    });
+    
+
+
 
   }
 
