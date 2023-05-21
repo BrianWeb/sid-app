@@ -4,8 +4,7 @@
   </title>
   <meta name="google-site-verification" content="eP4pj9kIwrN0v4ZFZtMdvATB6SwNt0qaOQZ0swbtRGg" />
   <!-- This site is optimized with the Yoast SEO Premium plugin v13.0 - https://yoast.com/wordpress/plugins/seo/ -->
-  <meta name="description" content="Sid's Emergency Plumber Dublin - Certified Dublin Plumber - All North Dublin Areas: , Serving Artane, Ballymun, Blanchardstown, Castleknock, Clontarf, Drumcondra,
-      Finglas, Glasnevin, Howth, Malahide, Phibsboro, Portmarnock, Raheny, Santry, Sutton. Repairing leaks, unblocking drains, and more." />
+  <meta name="description" content="Sid's Emergency Plumber Dublin - Certified Dublin Plumber - All North Dublin Areas" />
   <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
   <link rel="canonical" href="https://sidsplumbing.ie/" />
   <meta property="og:locale" content="en_GB" />
@@ -97,7 +96,7 @@
       <div class="row">
 
         <article class="article-sm  col-12   col-sm-12   col-md-12   col-lg-7  col-xl-7  ">
-          <h1>Dublin's Reliable Plumbing, Heating & Gas Experts:</h1>
+          <h1>Dublin's Emergency Plumbing, Heating & Gas Experts:</h1>
           <ul>
             <li *ngFor="let homePageIntro of homePageIntros">
               <div class="justifyTextOnLargeScreens">
@@ -105,6 +104,15 @@
               </div>
             </li>
           </ul>
+          <div>Currently Serving:</div>
+          <div>
+            <div *ngFor="let area of areas" class="inline-block areasListed">
+              <h2><span><a routerLink="/areas/plumber-{{ area.fields.areaName | lowercase}}" routerLinkActive="active">{{ area.fields.areaName}}  </a></span></h2>
+            </div>
+          </div>
+          <!--<h2></h2>Artane, Ballymun, Blanchardstown, Castleknock, Clontarf ,Drumcondra, Finglas, Glasnevin, Howth, Malahide, Phibsboro, Portmarnock, Raheny, Santry, Sutton.
+  -->
+
         </article>
 
         <article id="contactFormCol" class="article-sm  col-12   col-sm-12   col-md-12   col-lg-4 offset-lg-1   col-xl-4 offset-xl-1">

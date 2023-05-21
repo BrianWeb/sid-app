@@ -1,8 +1,8 @@
 
 <article class="sidebar">
   <ul class="nav flex-column">    
-      <li class="verticalNavItem" *ngFor="let area of areas">
-          <a routerLink="/areas/plumber-{{ area.fields.areaName | lowercase}}" routerLinkActive="active">Plumber {{ area.fields.areaName}} </a>
+      <li class="verticalNavItem areasListed" *ngFor="let area of areas">
+        <h2><a routerLink="/areas/plumber-{{ area.fields.areaName | lowercase}}" routerLinkActive="active">{{ area.fields.areaName}} </a></h2>
       </li>
   </ul>
 </article>

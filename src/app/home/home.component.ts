@@ -4,6 +4,7 @@ import { Component, OnInit } from '@angular/core';
 import { ContentfulService } from '../contentful.service/contentful.service';
 import { Entry } from 'contentful';
 
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -17,6 +18,7 @@ export class HomeComponent implements OnInit {
   //homePageBannerTickPoint1: Entry<any>[] = [];
   showLink = false;
 
+  areas: Entry<any>[] = [];
 
   constructor(private contentfulService: ContentfulService) {
 
@@ -26,6 +28,9 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     this.contentfulService.getHomePageIntro()
       .then(homePageIntros => this.homePageIntros = homePageIntros)
+
+    this.contentfulService.getAreas()
+      .then(areas => this.areas = areas)  //Area Intro
 
   }
 

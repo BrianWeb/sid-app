@@ -81,7 +81,6 @@ h1 {
 h2 {
   color: #006199;
   font-size: 1.5em;
-  padding-bottom: 20px;
 }
 
 
@@ -169,6 +168,10 @@ video {
 
 
 /*CUSTOM ELEMENTS:  */
+
+.inline-block {
+    display: inline-block;
+  }
 
 .noPadding {
   padding: 0px;
@@ -443,65 +446,6 @@ div.scrollmenu a:hover, a:focus, a:active, a:target {
     font-size: 18px;
   }
 }
-/* ---- PRODUCT ICONS ------ */
-
-
-
-
-.defaultButton {
-  background-color: #006199;
-  color: white; /*Boostrap override*/
-}
-
-.defaultButton a {
-  color: white; /*Boostrap override*/
-}
-
-@media only screen and (min-width:768px) and (max-width:992px) {
-  .productSvgAndHeader {
-    //height: 302px; /*at this view point 'Panel Products' and 'Timber Products' are taller than 'Insulation' and 'Joists' because they have two words. This makes them all the same height*/
-  }
-}
-
-svg {
-  width: 100%;
-}
-
-.productSvg {
-  padding-top: 1.5em;
-  fill: #fff;
-  background-color: white;
-}
-
-.st0 {
-  fill: none;
-  stroke: white;
-  stroke-miterlimit: 10;
-}
-
-.productHeading {
-  padding: .5em;
-  // font-size: 1.4em;
-  font-size: 1.1em;
-  font-weight: 600;
-  letter-spacing: 1px;
-}
-
-.serivceDescription {
-  color: #212529;
-  text-align: justify;
-}
-
-
-#servicesBulletPoints {
-  padding-bottom: 10px;
-}
-
-
-#servicesBulletPoints .fa-check {
-  color: #006ba1;
-}
-/* ----/Services -----*/
 #callUsBanner {
   background-color: #007abf;
   color: white;
@@ -533,3 +477,16 @@ p > img {
   margin-right: auto;
   padding: 20px;
 }
+
+.areasListed {
+  line-height: 40px;
+  margin-left: 3px;
+  margin-right: 3px;
+  margin-top: 6px;
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  background: #f5f5f5;
+  vertical-align: middle;
+}
+

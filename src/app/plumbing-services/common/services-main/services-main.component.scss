@@ -1,3 +1,64 @@
+
+/* ---- PRODUCT ICONS ------ */
+
+
+
+
+.defaultButton {
+  background-color: #006199;
+  color: white; /*Boostrap override*/
+}
+
+.defaultButton a {
+  color: white; /*Boostrap override*/
+}
+
+@media only screen and (min-width:768px) and (max-width:992px) {
+  .productSvgAndHeader {
+    //height: 302px; /*at this view point 'Panel Products' and 'Timber Products' are taller than 'Insulation' and 'Joists' because they have two words. This makes them all the same height*/
+  }
+}
+
+svg {
+  width: 100%;
+}
+
+.productSvg {
+  padding-top: 1.5em;
+  fill: #fff;
+  background-color: white;
+}
+
+.st0 {
+  fill: none;
+  stroke: white;
+  stroke-miterlimit: 10;
+}
+
+.productHeading {
+  padding: .5em;
+  // font-size: 1.4em;
+  // font-size: 1.1em;
+  // font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.serivceDescription {
+  color: #212529;
+}
+
+
+#servicesBulletPoints {
+  padding-bottom: 10px;
+}
+
+
+#servicesBulletPoints .fa-check {
+  color: #006ba1;
+}
+/* ----/Services -----*/
+
+
 .fa-ambulance {
   color: #e60000;
 }
@@ -25,8 +86,7 @@
 }
 
 .serviceIconAndTextCol {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 25px;
   margin: 25px;
   background-color: white;
 }
