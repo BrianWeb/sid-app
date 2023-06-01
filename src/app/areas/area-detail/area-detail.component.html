@@ -42,7 +42,7 @@
 
         <div *ngIf="area">
 
-          <h2>{{ area.fields.areaHeading }}</h2>
+          <h1>{{ area.fields.areaHeading }}</h1>
 
           <!--Add in this if you'd like an editable box from contenful to display the text
           <div class="justifyText" *ngIf="area.fields.areaMainText">
@@ -53,7 +53,7 @@
 
           <div class="justifyText">
             <p>
-              Plumber {{area.fields.areaName }}. Emergency Plumber {{area.fields.areaName }} Ph <strong><a href="tel:+353866049361"> 086&nbsp;604&nbsp;9361</a></strong>. Do you need a reliable Plumber in {{area.fields.areaName }}<span *ngIf="area.fields.surroundingAreas">, {{area.fields.surroundingAreas}}</span>?
+               Do you need a reliable Plumber in {{area.fields.areaName }}<span *ngIf="area.fields.surroundingAreas">, {{area.fields.surroundingAreas}}</span>?
             </p>
 
             <p>
@@ -61,14 +61,17 @@
             </p>
 
             <p>
-              This is (What We Do)
+              What We Do:
               <a routerLink="/plumbing-services" routerLinkActive="active">https://sidsplumbing.ie/plumbing-services/</a>, call our plumber before attempting to fix the problem yourself. Without the correct knowledge tools and materials, http://www.davies.ie  your initial issue could escalate and cost you more down the line.
+
+              Ph <strong><a href="tel:+353866049361"> 086&nbsp;604&nbsp;9361</a></strong>.
             </p>
 
             <article *ngIf="area.fields.areaPhoto">
 
               <img src="{{area.fields.areaPhoto.fields.file.url}}" class="centerImage imagePadding" alt="{{area.fields.areaName }}">
-            </article>
+              <figure>Emergency Plumber {{area.fields.areaName }}</figure>
+              </article>
 
 
           </div>
