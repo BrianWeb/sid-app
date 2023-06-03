@@ -94,25 +94,12 @@
     <changefreq>weekly</changefreq>
 </url>
 
-<url>
-    <loc>https://www.sidsplumbing.ie/contact</loc>
-    <changefreq>weekly</changefreq>
-</url>
-
-<url>
-    <loc>https://www.sidsplumbing.ie/contact-dublin-plumber</loc>
-    <changefreq>weekly</changefreq>
-</url>
 
 <url>
     <loc>https://www.sidsplumbing.ie/contact-dublin-plumber/</loc>
     <changefreq>weekly</changefreq>
 </url>
 
-<url>
-    <loc>https://www.sidsplumbing.ie/emergency-plumbing-prices</loc>
-    <changefreq>weekly</changefreq>
-</url>
 
 <url>
     <loc>https://www.sidsplumbing.ie/emergency-plumbing-prices/</loc>
@@ -159,8 +146,5 @@
     <changefreq>weekly</changefreq>
 </url>
 
-<url>
-    <loc>https://www.sidsplumbing.ie/www.sidsplumbing.ie</loc>
-    <changefreq>weekly</changefreq>
-</url>
+
 </urlset>

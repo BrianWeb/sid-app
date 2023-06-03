@@ -27,7 +27,6 @@ import { FaqsComponent } from './faqs/faqs.component';
 import { EmergencyPlumbingPricesComponent } from './emergency-plumbing-prices/emergency-plumbing-prices.component';
 import { AboutUsComponent } from './common/about-us/about-us.component';
 import { ContactDublinPlumberComponent } from './contact-dublin-plumber/contact-dublin-plumber.component';
-import { NonEmergencyPlumbingPricesComponent } from './non-emergency-plumbing-prices/non-emergency-plumbing-prices.component';
 import { FooterComponent } from './common/footer/footer.component';
 import { BlogComponent } from './blog/blog.component';
 
@@ -80,7 +79,6 @@ import { BlogPostPreviewComponent } from './blog/blog-post-preview/blog-post-pre
     EmergencyPlumbingPricesComponent,
     AboutUsComponent,
     ContactDublinPlumberComponent,
-    NonEmergencyPlumbingPricesComponent,
     FooterComponent,
     BlogComponent,
     AreaDetailComponent,
