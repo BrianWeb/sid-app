@@ -3,9 +3,10 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\blog\\blog-post",
-    "\\src\\app\\home"
+    "\\src\\app\\common",
+    "\\src\\app\\common\\contact-form",
+    "\\src\\app\\common\\contact-form\\contact"
   ],
-  "SelectedNode": "\\src\\app\\app.component.html",
+  "SelectedNode": "\\src\\app\\common\\contact-form\\contact\\contact.component.ts",
   "PreviewInSolutionExplorer": false
 }
