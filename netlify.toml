@@ -8,9 +8,12 @@
 
   [[headers]]
   for = "/*"
+
+
   [headers.values]
-    Content-Security-Policy = "script-src
-    'self'
+    Content-Security-Policy = "script-src 'self' "
+
+    script-src 'none'
     www.google-analytics.com
     ajax.googleapis.com
     https://schema.org
