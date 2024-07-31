@@ -11,7 +11,7 @@
 
 
   [headers.values]
-    Content-Security-Policy = "script-src 'self' "
+   
     www.google-analytics.com
     ajax.googleapis.com
     https://schema.org
