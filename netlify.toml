@@ -8,17 +8,7 @@
 
   [[headers]]
   for = "/*"
+
+
   [headers.values]
-    Content-Security-Policy = "script-src
-    'self'
-    www.google-analytics.com
-    ajax.googleapis.com
-    https://schema.org
-    https://code.jquery.com
-    https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js
-    https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js
-    www.bootstrap.com
-    http://www.w3.org/2000/svg
-    https://www.googletagmanager.com
-    https://use.fontawesome.com
-    https://fonts.googleapis.com;"
+   
